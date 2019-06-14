@@ -37,6 +37,7 @@ const writeCsv = (records, filename) => {
   const createCsvWriter = require('csv-writer').createObjectCsvWriter;
   const csvWriter = createCsvWriter({
       path: filename,
+      fieldDelimiter: ';',
       header: [
           {id: 'edrpou', title: 'edrpou'},
           {id: 'official_address', title: 'official_address'},
