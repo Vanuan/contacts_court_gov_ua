@@ -1,0 +1,9 @@
+{
+  "name": "rada_emails",
+  "version": "1.0.0",
+  "main": "rada_emails_to_csv.js",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3"
+  }
+}
