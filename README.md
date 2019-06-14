@@ -7,7 +7,7 @@ Radas contacts from court.gov.ua
 
 ## Run
 
-    node rada_emails_to_csv.js > radas_court_gov_ua.json
+    node rada_emails_to_csv.js > data/radas_court_gov_ua.json
 
 ## Data update
 

@@ -32,4 +32,21 @@ radas = rows.map((i, row) => {
   })
   return rada;
 }).get();
+
+const writeCsv = (records, filename) => {
+  const createCsvWriter = require('csv-writer').createObjectCsvWriter;
+  const csvWriter = createCsvWriter({
+      path: filename,
+      header: [
+          {id: 'edrpou', title: 'edrpou'},
+          {id: 'official_address', title: 'official_address'},
+          {id: 'mail_address', title: 'mail_address'},
+          {id: 'email', title: 'email'},
+          {id: 'fax', title: 'fax'},
+      ]
+  });
+   
+  return csvWriter.writeRecords(records);
+}
 console.log(JSON.stringify(radas));
+writeCsv(radas, 'data/radas_email_court_gov_ua.csv')
